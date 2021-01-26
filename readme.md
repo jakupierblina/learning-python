@@ -18,7 +18,7 @@ After the code you type in, the Python Virtual Machine (PVM) - the runtime engin
 
 
 
-<h3> Object types </h3>
+<h4> Object types </h4>
 
 Python programs can be decomposed into modules, statements, expressions and objects as follow:
 
@@ -33,11 +33,156 @@ In typical Python programs most of this grunt work goes away. Because Python pro
 
 
 
+NOTE:
+
+In Python, data takes the form of objects - either built-in objects that Python provides or objects we create using Python tools and other languages such as C.
+
+<h6> Numeric Type Basics</h6>
+
+In Python numbers are not really a single object type, but a category of similar types. In a complete inventory of Python's numeric toolbox includes:
+
+- Integers and floating-point numbers
+
+  ​		Integers are written as strings of decimal digits. Floating-point numbers have a decimal point and an optional signed exponent!
+
+- Complex numbers
+
+  ​		Python complex literals are written as real-part + imaginary-part as are represented in Math. 
+
+- Fixed-precision decimal numbers
+
+- Rational fraction numbers
+
+- Sets
+
+  an unordered collection of unique and immutable objects that supports operations corresponding to mathematical set theory. By definition an item appears only once in a set, no matter how many times it is added.  Note: sets do not map keys to values, they are neither sequence nor mapping types.
+
+- Booleans
+
+- Unlimited integer precision
+
+- A variety of numeric built-ins and modules
+
+
+
+The table bellow gives a basic notes about the expression operators and precedence in Python.
+
+<table>
+    <tr>
+   	 <th> Operations</th>
+   	 <th> Description </th>
+     </tr>
+    <tr>
+        <td> yeild x</td>
+        <td> Generator function</td>
+    </tr>
+    <tr>
+        <td> lambda args: expression</td>
+        <td> Anonymous function generation</td>
+    </tr>
+    <tr>
+        <td> x if y else x</td>
+        <td> Ternary selection (x is evaluated only if y is true)</td>
+    </tr>
+    <tr>
+        <td> x or y</td>
+        <td> Logical OR (y is evaluated only if x is false)</td>
+    </tr>
+     <tr>
+        <td> x and y</td>
+        <td> Logical AND (y is evaluated only if x is true)</td>
+    </tr>
+    <tr>
+        <td> not x</td>
+        <td> Logical NEGATION</td>
+    </tr>
+    <tr>
+        <td> x in y, x not in y</td>
+        <td> Membership (iterables,sets)</td>
+    </tr>
+    <tr>
+        <td> x in y, x is not y </td>
+        <td> Object identity tests </td>
+    </tr>
+    <tr>
+        <td> x<y, x<= y, x>y, x>=y, x==y, x!=y </td>
+        <td> Magnitude comparson, set subset and superset; Value equality operations</td>
+    </tr>
+    <tr>
+        <td> x | y</td>
+        <td> Bitwise OR, set union </td>
+    </tr>
+    <tr>
+        <td> x ^ y</td>
+        <td> Bitwise XOR, set symetric difference </td>
+    </tr>
+    <tr>
+        <td> x & y </td>
+        <td> Bitwise AND, set intersection </td>
+    </tr>
+    <tr>
+        <td> x << y, x >> y</td>
+        <td> Shift x left or right by y bits </td>
+    </tr>
+    <tr>
+        <td> x * y <br> x%y <br> x/y, x//y</td>
+        <td> Multiplication, repetition; <br> Remainder,format; <br> Division: true and floor</td>
+    </tr>
+    <tr>
+        <td> -x, +x</td>
+        <td> Negation, identity</td>
+    </tr>
+    <tr>
+        <td> ~x</td>
+        <td> Bitwise NOT (inversion) </td>
+    </tr>
+    <tr>
+        <td> x ** y</td>
+        <td> Power (exponentiaton) </td>
+    </tr>
+    <tr>
+        <td> x[i]</td>
+        <td> Indexing(sequence, mapping, others)</td>
+    </tr>
+    <tr>
+        <td> x[i:j:k]</td>
+        <td> Slicing</td>
+    </tr>
+    <tr>
+        <td> x(...)</td>
+        <td> Call (function, method,class, othercallable)</td>
+    </tr>
+    <tr>
+        <td> x.attr</td>
+        <td> Attribute reference </td>
+    </tr>
+    <tr>
+        <td> (...)</td>
+        <td> Tuple, expression, generator expression</td>
+    </tr>
+    <tr>
+        <td> [...]</td>
+        <td> List, list comperhesion</td>
+    </tr>
+    <tr>
+        <td> {...}</td>
+        <td> Dictionary, set, set and dictionary comperhesion</td>
+    </tr>
+</table>
+
+
+
+repr -> is used by echoes: as-code form
+
+str -> is used by print: user-friendly form
+
+Both of these convert arbitrary objects to their string representation
+
 <i><mark><b>In python explicit is better than implicit and simple is better than complex.</b></mark> </i>
 
 
 
-<h3> Debugging </h3>
+<h4> Debugging </h4>
 
 Read the error message and go fix the tagged line. 
 
