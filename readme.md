@@ -10,6 +10,8 @@
 
 # Intro
 
+Python is high level programing language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer/simpler lines of code.
+
 Python's traditional runtime execution model: source code you type is translated to byte code, which then will be run by Python Virtual Machine. Your code is automatically compiled, but then it is interpreted.
 
 The Python interpreter is a program that runs the Python source code you write. Source code is/are statements you write for your program - it consists of text(byte code) in textfiles that ends with .py extension. Bytecode is the lower level from your program after Python compiles it. Python automatically stores the bytecode in the files with .py extension.
@@ -33,9 +35,7 @@ In typical Python programs most of this grunt work goes away. Because Python pro
 
 
 
-NOTE:
-
-In Python, data takes the form of objects - either built-in objects that Python provides or objects we create using Python tools and other languages such as C.
+NOTE: In Python, data takes the form of objects - either built-in objects that Python provides or objects we create using Python tools and other languages such as C.
 
 <h6> Numeric Type Basics</h6>
 
@@ -178,7 +178,37 @@ str -> is used by print: user-friendly form
 
 Both of these convert arbitrary objects to their string representation
 
+***
+
 <i><mark><b>In python explicit is better than implicit and simple is better than complex.</b></mark> </i>
+
+***
+
+
+
+<h4> Dive in </h4>
+
+Python is unique for <i>dynamic typing</i> model. In Python, types are determined automatically at runtime, not in response to declarations in your code. This means that your variables are never declared ahead time. This <i>dynamic typing</i> is can be explained in an easier form;
+
+for example if we declare x =9, Python will perform this request into three steps:
+
+1. Create an object to represent the value 9.
+2. Create the variable <b>x</b>, if it doesn't exist yet.
+3. Link the variable <b>x</b> to the new object 3.
+
+Long story short variable x becomes a reference to the object 9.
+
+Remainder:
+
+- <i><b>Variables</b></i> are entries that links to objects.
+- <i><b>Object</b></i> are representation of the values they stand for.
+- <i><b>References</b></i> are pointers.
+
+Each time you generate a new value in your script by running the file, Python creates a new object to represent that value. Furthermore Python handles the reclaim of the object by Garbage-Collection, which means that every times you update the value of the object it will automatically thrown the future/new object.
+
+
+
+
 
 
 
@@ -218,6 +248,6 @@ Furthermore you can use <i>IDE GUI debuggers </i>which is a sort of point-and-cl
 
 6. <b>Why does “spam” show up in so many Python examples in books and on the Web? </b>
 
-   “Spam” is a reference from a famous Monty Python skit in which people trying to order food in a cafeteria are drowned out by a chorus of Vikings singing about spam. Oh, and it’s also a common variable name in Python scripts....
+   “Spam” is a reference from a famous Monty Python skit in which people trying to order food in a cafeteria are drowned out by a chorus of Vikings singing about spam. Oh, and it’s also a common variable name in Python scripts..
 
    

@@ -39,3 +39,36 @@ print(L)
 #check if an elements exits in a set
 print(7 in L)
 
+A = "spam"
+B = A
+B = "shrubbery"
+print(A)
+
+A = ["spam"]
+B = A
+B[0] = "shrubbery"
+print(A)
+
+A = ["spam"]
+B = A[:]
+B[0] = "shrubbery"
+print(A)
+
+
+S = 'hello,world'
+print(S.split(','))
+
+print(S.isdigit())
+print(S.rstrip())
+print(S.lower())
+print(S.endswith('spam'))
+print(S.encode('latin-1'))
+
+for x in S: print(x)
+
+print('spam' in S)
+print([c * 1 for c in S])
+print(map(ord, S))
+
+
+print(S * 2)
