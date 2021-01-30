@@ -208,7 +208,11 @@ Each time you generate a new value in your script by running the file, Python cr
 
 
 
+<i>Lists: </i>ordered object collection type.
 
+<i>Tuples: </i>
+
+*** Difference between tuples and lists; tuple as a simple association of objects and a list as a data structure that changes over time. ***
 
 
 
