@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Learning Python!</title>
+  <title>Introduction</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -11,7 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
    {% load static %}
-  <link rel="stylesheet" type="text/css" href="{% static 'demo/css/index.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'demo/css/introduction.css' %}">
 
 
 </head>
@@ -23,6 +23,7 @@ background-position: center;
 
 <nav class="navbar navbar-expand-sm " style="padding: 10px 10px;">
   <div  class="container">
+
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -47,18 +48,22 @@ background-position: center;
 </nav>
 
 <div class="hero-image" >
-  <div class="hero-text">
-    <h1>Welcome</h1>
-<br><br>
-   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris nisl, venenatis a urna quis, venenatis euismod nulla. Aliquam cursus eget nisi in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ac euismod sem. Nulla facilisi. Curabitur ut libero at velit faucibus mattis vitae quis lorem. Sed porta sem interdum nisl blandit tristique. Praesent eget est sed augue sagittis blandit at at risus. Sed pellentesque sit amet libero gravida pellentesque. Nunc ut pretium dui. Vivamus in tortor nunc. Fusce magna diam, pharetra eu sapien eu, dapibus efficitur metus. Pellentesque scelerisque accumsan tincidunt.
-    Integer sagittis tellus ut varius sollicitudin.  Cras erat mi, mattis ac risus ullamcorper, blandit placerat nisl. Suspendisse scelerisque, arcu a volutpat pretium, lorem leo efficitur tellus, quis vehicula purus quam malesuada ante. Cras quis leo iaculis, lacinia   <a href="#" class="stretched-link"> read more.</a> </p>
- </p>
-     <br><br>
-
+       <div class="hero-text">
+         <h1>Introduction</h1>
+            <div class="row">
+                     <div class="col-8">
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris nisl, venenatis a urna quis, venenatis euismod nulla. Aliquam cursus eget nisi in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ac euismod sem. Nulla facilisi. Curabitur ut libero at velit faucibus mattis vitae quis lorem. Sed porta sem interdum nisl blandit tristique. Praesent eget est sed augue sagittis blandit at at risus. Sed pellentesque sit amet libero gravida pellentesque. Nunc ut pretium dui. Vivamus in tortor nunc. Fusce magna diam, pharetra eu sapien eu, dapibus efficitur metus. Pellentesque scelerisque accumsan tincidunt.
+                        Integer sagittis tellus ut varius sollicitudin. In rutrum, neque nec tempor tempor, eros dolor imperdiet neque, vel volutpat metus enim nec ex. Cras erat mi, mattis ac risus ullamcorper, blandit placerat nisl. Suspendisse scelerisque, arcu a volutpat pretium, lorem leo efficitur tellus, quis vehicula purus quam malesuada ante. Cras quis leo iaculis, lacinia
+                      </p>
+                     </div>
+                     <div class="col-4"  >
+                         {% load static %}
+                        <img src="{% static 'demo/img/olaf.gif' %}" alt="My image">
+                     </div>
+            </div>
+       </div>
   </div>
-</div>
 
-</div>
 <footer>
 <div class="text-center p-3"  >
   <p style="color: white;">© 2020 Copyright are reserved!</p>
