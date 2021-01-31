@@ -1,6 +1,4 @@
-# Learning Python website!
+# Whatever
 
-Under maintenance!
-
-<img src="project-demo.png">
+<img src="pic.png">
 

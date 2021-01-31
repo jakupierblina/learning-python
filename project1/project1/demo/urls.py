@@ -16,8 +16,26 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
+from django.conf.urls import url
+from django.contrib import admin
 
 
 urlpatterns = [
-    path('', views.hi, name='homepage'),
+    path('', views.homepage),
+    path('homepage', views.homepage, name='homepage'),
+    path('about', views.about, name='about'),
+    path('material', views.material, name='material'),
+    path('gettingstarted', views.gettingstarted, name='gettingstarted'),
+
+
+
+
+
+    #url(r'^admin/', admin.site.urls),
+    #url(r'^about/$', views.about),
+    #url(r'^gettingstarted/$', views.getting),
+    #url(r'^material/$', views.material),
+    #url(r'^$', views.homepage),
 ]
