@@ -10,4 +10,6 @@ Most of the applications are in Django framework.
 
 You can simply download the zip of the project and open in Django to run it.
 
-<img src="gif9.gif">
+
+
+<img src="img/il.gif">
