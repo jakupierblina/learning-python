@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <title>Weather app</title>
+
+   <style>
+
+       .content {
+          max-width: 500px;
+          margin: auto;
+          background: white;
+          padding: 10px;
+        }
+   </style>
+
+</head>
+<body>
+<div class="content">
+    <div class="row">
+      <h1 style="margin-top: 100px; margin-left: 25px" >Find weather</h1>
+       <form method="POST" style="margin-top: 20px; width: 80%">
+            {% csrf_token %}
+        <label for="city"></label>
+        <input style="margin: 20px; height: 40px;" type="text" class="form-control form-control-lg" name="city" id="city" placeholder="Write name of the city..">
+        <input style="margin: 20px 120px; width: 40%; height: 40px;"  type="submit" class="btn btn-primary mb-2" value="Submit"/>
+      </form>
+    </div>
+
+ <h1> City: {{form}} </h1>
+</div>
+
+</body>
+
+
+</html>
