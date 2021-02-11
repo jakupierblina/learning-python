@@ -17,3 +17,11 @@ There is calendar as well :)
 dairlytrackapp => main application
 
 webdemo=> module of the app
+
+<b> Design source: Appland Bootstrap landing page  </b>
+
+
+
+Index page looks like this, the user have opportunity to log in or register if he is not registered yet and track his/her schedule.
+
+<img src="../img/trackreadme.png">

@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Welcome</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Welcome to TrackHack App!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--- Link css style --->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'webdemo/css/base.css' %}">
 </head>
 <body>
-<h1>Welcome</h1>
+     <!-- Navbar -->
+     {% block navbar %}
+        {% include 'webdemo/partials/_navbar.html' %}
+     {% endblock %}
+     <!-- End Navbar -->
+
+     <!-- Header -->
+     {% block header %}
+        {% include 'webdemo/partials/_header.html' %}
+     {% endblock %}
+     <!-- End Header -->
+
+     <!-- Main -->
+      {% block main %}
+        {% include 'webdemo/partials/_main.html' %}
+     {% endblock %}
+      <!-- End Main -->
+
+      <!---- Footer ---->
+      {% block footer %}
+         {% include 'webdemo/partials/_footer.html' %}
+      {% endblock %}
+      <!-- End Footer -->
 </body>
 </html>

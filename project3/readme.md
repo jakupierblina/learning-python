@@ -8,7 +8,7 @@ You will get email notification's for your remainders.
 
 There is calendar as well :)
 
-
+<img src="../img/trackreadme.png">
 
 <i> You can just donwload the zip, and open the project. </i>
 
