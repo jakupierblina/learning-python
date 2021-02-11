@@ -1,4 +1,5 @@
 {% load static %}
+
 <section id="hero" class="d-flex align-items-center">
 
     <div class="container">
@@ -7,8 +8,12 @@
           <div>
             <h1>Track remainder</h1>
             <h2> Track remainder application for managing your time, income, lifestyle and your daily habits.</h2>
-             <button type="button" class="btn btn-secondary" style="background-color: #566ea0; width: 120px; height: 40px">Log in</button>
-            <button type="button" class="btn btn-secondary" style="background-color: #566ea0; width: 120px; height: 40px">Sign up</button>
+              <button type="button" class="btn btn-secondary" style="background-color: #566ea0; width: 120px; height: 40px">
+                  <a style="color: white;" href="{% url 'login' %}">Log in</a>
+              </button>
+              <button type="button" class="btn btn-secondary" style="background-color: #566ea0; width: 120px; height: 40px">
+                  <a style="color: white;" href="{% url 'register' %}"> Sign up</a>
+              </button>
           </div>
         </div>
         <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
