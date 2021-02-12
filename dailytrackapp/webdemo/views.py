@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from django.contrib.auth.forms import  UserCreationForm
+from django.contrib.auth.forms import UserCreationForm
+from .models import *
+from .form import OrderForm, CreateUserForm
+
 # Create your views here.
 def welcome(request):
     return render(request, 'webdemo/base.html')
@@ -9,7 +12,14 @@ def login(request):
 
 
 def register(request):
-    return render(request, 'webdemo/register/register.html')
+    form = CreateUserForm()
+    if request.method == 'POST':
+        form = CreateUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+
+    context = {'form': form}
+    return render(request, 'webdemo/register/register.html', context)
 
 
 

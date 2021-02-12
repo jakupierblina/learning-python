@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webdemo.apps.WebdemoConfig',
+    'django_createsuperuser',
 ]
 
 MIDDLEWARE = [

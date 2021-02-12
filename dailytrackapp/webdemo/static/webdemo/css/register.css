@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f4fbff;
+  width: 100%;
 }
 
 p {
@@ -222,9 +223,11 @@ h2 {
 margin: 10px;
 }
 
-button{
+input{
   background-color: #566ea0;
-  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  margin: 30px;
 }
 
 span{
