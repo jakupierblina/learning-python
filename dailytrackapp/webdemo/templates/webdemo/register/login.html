@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="{% static 'webdemo/img/undraw_remotely_2j6y.svg' %}" style="width: 400px; height: 400px" alt="Image" class="img-fluid">
+          <img src="{% static 'webdemo/img/login.svg' %}" alt="Image" class="img-fluid">
         </div>
         <div class="col-md-6 contents">
           <div class="row justify-content-center">
@@ -28,18 +28,21 @@
               <div class="mb-4">
               <h3>Sign In</h3><br>
               </div>
-           <form>
-              <div class="form-group" style="margin: 10px">
-               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+           <form method="get">
+
+              <div class="form-group">
+               <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
-              <div class="form-group" style="margin: 10px">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Password">
               </div>
-              <div class="form-check" style="margin-top: 20px">
+              <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Remember me</label>
               </div>
-              <button type="submit" class="btn btn-primary" style="background-color: #566ea0; margin-top: 10px">LOG IN</button>
+               <button type="submit" class="btn btn-primary" href="#"> LOG IN</button>
+               <span></span><a href="{% url 'register' %}">Don't have account?</a></span>
             </form>
             </div>
           </div>

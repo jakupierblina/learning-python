@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f4fbff; }
+  background-color: #f4fbff;
+}
 
 p {
   color: #b3b3b3;
@@ -8,14 +9,18 @@ p {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
 
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; }
+  transition: .3s all ease;
+  color: white;
+}
   a:hover {
-    text-decoration: none !important; }
+    text-decoration: none !important;
+  }
 
 .content {
   padding: 7rem 0; }
@@ -198,31 +203,40 @@ h2 {
 
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #7e0cf5;
-  opacity: .2;
+  opacity: .2; }
+
+.col-md-8{
+    margin-right: 15px;
+}
+.mb-4{
+    margin: 10px;
+}
+.form-group{
+  margin: 10px;
+}
+#exampleCheck1{
+  margin: 10px;
+}
+
+#label{
+margin: 10px;
+}
+
+button{
+  background-color: #566ea0;
+  margin-top: 10px;
 }
 
 span{
   margin-left: 10px;
 }
 
-button{
-  background-color: #566ea0;
-  margin-top: 10px
-}
-
-.form-check{
-  margin-top: 20px;
-}
-
 img{
-  width: 450px;
-  height: 450px;
+  width: 500px;
+  height: 500px;
 }
 .container{
-
   padding: 30px;
   background-color: #f4fbff;
 }
-a{
-  color: white;
-}
+
