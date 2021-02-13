@@ -4,9 +4,10 @@
     {% endblock %}
 <!----- End Navbar------>
 
-<!--- Link css style --->
+<!--- Link css and javascript style --->
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'webdemo/css/diary.css' %}">
+    <script src="{% static 'webdemo/js/diary.js' %}"></script>
 <!---------------------->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,10 +18,10 @@
              <h3 style="margin: 25px"> Add another note</h3>
         </div>
         <div class="col-4" style="margin-top: 10px">
-            <div class="plus radius" style="--l:35px;--t:3px;--c2:#036603; margin: 25px"><a href="#"> </a></div>
-        </div>
-    </div>
+            <div class="plus radius" style="--l:35px;--t:3px;--c2:#036603; margin: 25px" onclick="displayDate()"></div>
 
+        </div>
+     </div>
 </div>
 
 

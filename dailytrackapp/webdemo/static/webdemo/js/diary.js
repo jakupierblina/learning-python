@@ -1,0 +1,6 @@
+
+function displayDate() {
+  alert(Date());
+
+
+}
