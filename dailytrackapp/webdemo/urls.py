@@ -8,4 +8,9 @@ urlpatterns = [
     path('logout/', views.logoutUser, name='logout'),
     path('register/', views.registerPage, name='register'),
     path('homepage/', views.homepage, name='homepage'),
+
+    #section's
+    path('diary/', views.diary, name='diary_section'),
+    path('todo/', views.todo, name='todo_section'),
+    path('calendar/', views.calendar, name='calendar_section'),
 ]

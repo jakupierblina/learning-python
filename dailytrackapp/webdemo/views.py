@@ -53,3 +53,14 @@ def registerPage(request):
 def homepage(request):
     return render(request, 'webdemo/authorized/homepage.html')
 
+
+#section's
+def diary(request):
+    return render(request, 'webdemo/authorized/partials/_section_diary.html')
+
+
+def todo(request):
+    return render(request, 'webdemo/authorized/partials/_section_todo.html')
+
+def calendar(request):
+    return render(request, 'webdemo/authorized/partials/_section_calendar.html')
