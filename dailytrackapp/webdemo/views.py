@@ -53,6 +53,10 @@ def registerPage(request):
 def homepage(request):
     return render(request, 'webdemo/authorized/homepage.html')
 
+def chat(request):
+    return render(request, 'webdemo/authorized/chat.html')
+
+
 
 #section's
 def diary(request):
